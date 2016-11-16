@@ -1,0 +1,34 @@
+<!--
+<div>
+	<ul>
+		<li ng-repeat="pd in productDetails" style="list-style:none;">
+			<h1>{{pd.title}}</h1>
+			<p>Price {{pd.price}}</p>
+			<p>Rating: {{pd.rating}}</p>
+			<p>Short Description:</p>
+			<p>{{pd.short_description}}</p>
+			<p>Long Description</p>
+			<p>{{pd.long_description}}</p>
+
+		</li>
+	</ul>
+
+</div>-->
+<ion-view view-title="Product">
+	<ion-content class="padding">
+
+		<ul>
+			<li ng-repeat="pd in productDetails" style="list-style:none;">
+				<h1>{{pd.title}}</h1>
+				<p>Price {{pd.price}}</p>
+				<p>Rating: {{pd.rating}}</p>
+				<p>Short Description:</p>
+				<p>{{pd.short_description}}</p>
+				<p>Long Description</p>
+				<p>{{pd.long_description}}</p>
+
+			</li>
+		</ul>
+		<ionic-ratings ratingsobj='ratingsObject' index='4'></ionic-ratings>
+	</ion-content>
+</ion-view>
